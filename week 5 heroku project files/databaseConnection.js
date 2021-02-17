@@ -19,7 +19,7 @@ const dbConfigLocal = {
 	multipleStatements: false
 };
 
-if (is_heroku) {
+if (is_heroku == 1) {
 	var database = mysql.createPool(dbConfigHeroku);
 }
 else {
